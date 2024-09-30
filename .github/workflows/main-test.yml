@@ -24,10 +24,17 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: jbs1127/test-actions
-        path: './test-actions-folder'
+        ref: main
+        path: test-actions
 
     -name: clone files
       run: git clone git@github.com:jbs1127/test-actions.git
+
+    - name: Download files from another-repo
+      run: |
+          mkdir -p downloaded-files
+          cp test-actions/* downloaded-files/
+          ls downloaded-files
 
     - name: list files
       run: ls -lR
