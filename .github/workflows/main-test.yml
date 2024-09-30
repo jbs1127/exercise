@@ -26,5 +26,8 @@ jobs:
         repository: jbs1127/test-actions
         path: './test-actions-folder'
 
+    -name: clone files
+      run: git clone git@github.com:jbs1127/test-actions.git
+
     - name: list files
       run: ls -lR
