@@ -27,4 +27,4 @@ jobs:
         path: './test-actions'
 
     - name: list files
-      run: ls -a
+      run: ls -lR
