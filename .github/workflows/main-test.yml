@@ -1,0 +1,13 @@
+jobs:
+  fetch_file:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: GIT Checkout
+      uses: actions/checkout@v4
+
+    - name: Checkout db backup repo
+      uses: actions/checkout@v4
+      with:
+        repository: jbs1127/test-actions
+        path: './test-actions'
