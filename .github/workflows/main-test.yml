@@ -27,9 +27,6 @@ jobs:
         ref: main
         path: test-actions
 
-    -name: clone files
-      run: git clone git@github.com:jbs1127/test-actions.git
-
     - name: Download files from another-repo
       run: |
           mkdir -p downloaded-files
