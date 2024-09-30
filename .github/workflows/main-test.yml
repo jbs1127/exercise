@@ -1,3 +1,17 @@
+name: test-action
+
+on:
+  push:
+    branches:
+      - 'master'
+  # pull_request:
+  #   branches:
+  #     - main
+  #   paths-ignore:
+  #     - '.github/**'
+  #     - 'devops/**'
+  workflow_dispatch:
+  
 jobs:
   fetch_file:
     runs-on: ubuntu-latest
