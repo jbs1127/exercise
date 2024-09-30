@@ -24,7 +24,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: jbs1127/test-actions
-        path: './test-actions/'
+        path: test-actions
 
     - name: list files
       run: ls -lR
